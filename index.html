@@ -119,6 +119,10 @@
               width: 25px;
               height: 25px;
             }
+
+            .icon-show:hover{
+              rotate: 45deg;
+            }
           }
         }
 
@@ -139,10 +143,11 @@
 
 function showParagraph(button){
   var img = button.querySelector('.icon-show');
-  var imgSrc = img.src
+  var imgSrc = img.src.toLowerCase()
   var paragraph = button.parentElement.nextElementSibling.style
 
-  if (imgSrc === "http://127.0.0.1:5500/faq-accordion-main/assets/images/icon-minus.svg") {
+
+  if (imgSrc.includes("icon-minus", 0)) {
     img.src = './assets/images/icon-plus.svg';
     paragraph.display = 'none'
 
