@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop](./assets/images/Screenshot%202023-12-10%20232414.png)
-[Mobile](./assets/images/Screenshot%202023-12-10%20232544.png)
+![Desktop](./assets/images/Screenshot%202023-12-10%20232414.png)
+![Mobile](./assets/images/Screenshot%202023-12-10%20232544.png)
 
 ## My process
 First, I code the entire layout using HTML semantics like divs and h1. I inserted the fonts and colors that I used in my css. After the layouts of the HTML, I started naming them with class names like, containers, title-header, accordions, text-paragraph and started designin it in css.
