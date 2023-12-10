@@ -112,6 +112,13 @@
         }
       }
 
+      /* Animations */
+      #fade-in{
+        height: 50%;
+        opacity: 0;
+        transition: all .75s ease;
+      }
+
 
     }
 
@@ -129,11 +136,16 @@ function showParagraph(button){
 
   if (imgSrc.includes("icon-minus", 0)) {
     img.src = './assets/images/icon-plus.svg';
-    paragraph.display = 'none'
+    paragraph.height = 0
+    paragraph.opacity = 0
+    paragraph.transition = "all .5s ease"
 
   }
   else{
     img.src = './assets/images/icon-minus.svg';
+    paragraph.transition = "all .5s ease"
+    paragraph.height = "50%"
+    paragraph.opacity = 1
     paragraph.display = 'block'
   }
 }
